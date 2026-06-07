@@ -22,7 +22,7 @@ html {
   align-items: center;
 
   height: 100vh;
-  max-height: 800px;
+  min-height: 800px;
 }
 
 h1,
