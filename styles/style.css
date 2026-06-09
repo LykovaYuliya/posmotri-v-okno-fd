@@ -259,14 +259,13 @@ ol {
   flex-direction: column;
   gap: 26px;
 
-  flex-grow: 1;
-  min-height: 535.5px; /* добавила минимальную высоту, чтобы flex-grow работал и заголовок не уезжал */
-  
+  flex-grow: 1; 
 }
 
 /* Список видео из городов */
 .content__list-container {
-  max-height: 298px;
+  max-width: 399px;
+  height: 298px;  /* даже если видео не подргружаются внутрь блок остается пустой и не даёт упасть заголовку*/
   overflow-y: auto;
 
   display: flex;
@@ -281,8 +280,7 @@ ol {
   flex-direction: column;
   gap: 30px;
 
-  width: 390px;
-  margin-right: 3px;
+  /* margin-right: 3px; */
 }
 
 /* Карточка видео: заголовок и картинки видео */
@@ -293,7 +291,7 @@ ol {
 }
 
 .content__video-card-thumbnail {
-  min-width: 194px;
+  width: 194px;
   height: 103px;
   object-fit: cover;
   object-position: center;
@@ -301,7 +299,7 @@ ol {
 
 .content__video-card-description-container {
   flex-grow: 1;
-  min-width: 196px;
+  min-width: 0;
 }
 
 /* Текст в карточке видео */
@@ -363,9 +361,9 @@ ol {
 }
 
 .more-button {
-  width: 390px;
-
-  padding: 7px 140px;
+  width: fit-content;
+  
+  padding: 7px 141px;
   margin-right: 3px;
 }
 
